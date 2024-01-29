@@ -1,16 +1,15 @@
 name: Docker Image CI
-
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
 jobs:
 
   build:
 
     runs-on: ubuntu-latest
+    runs-on: node:alpine
 
     steps:
     - uses: actions/checkout@v3
